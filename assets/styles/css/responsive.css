@@ -1,0 +1,107 @@
+@media (max-width: 1700px) {
+    .buttons-lg{
+        justify-content: space-around !important;
+    }
+
+    .medium-button-var {
+        width: 48%;
+    }
+}
+
+
+@media  (max-width:768px) {
+
+    .navbar-desktop{
+        display: none;
+    }
+    .img-home{
+        display: none;
+    }
+
+    .initial-form{
+        width: 94%;  
+        top: 350px; 
+        /* display: none; */
+    }
+    
+    #nav-mobile{
+        display: block;
+    }
+    
+    .multisteps-form__progress-btn:before {
+        text-indent: 0;
+      }
+
+    .progressbar{
+        margin-top: 20px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .box-line{
+        flex-direction: column;
+    }
+
+    .line-descripcion{
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-form{
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .description-price-var{
+        display: none;
+    }
+
+    .options-poliza{
+        margin-bottom: 20px !important;
+    }
+
+    .medium-button{
+        width: 95%;
+    }
+
+    .line-descripcion-datos_adicionales{
+        width: 100%;
+        text-align: center;
+    }
+
+    .line-datos_adicionales{
+        width: 100%;
+    }
+
+    .btn_mobile{
+        margin-top: 10px !important;
+    }
+
+    .card-header-descripcion , .card-subheader-description , .card-subheader-description , .card-mobile-buttons{
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    
+    .card-top-mobile{
+        margin-top: 20px !important;
+    }
+
+    .description-price{
+        display: none;
+    }
+
+    .divider{
+        display: none;
+    }
+
+    .alert-beneficiario-mobile{
+        flex-direction: column !important;
+    }
+
+    .alert-beneficiario-mobile .alert-beneficiario-mobile--descripcion{
+        width: 100% !important;
+        font-size: 13px;
+        justify-content: center;
+    }
+
+}
+
