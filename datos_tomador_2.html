@@ -1,0 +1,2201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/styles/css/style.css" />
+  <link rel="stylesheet" href="./assets/styles/css/responsive.css" />
+
+  <title>Seguro de vida</title>
+</head>
+
+<body class="background-page">
+  <!-- Inicio navbar desktop -->
+  <div class="container-fluit">
+    <nav class="navbar navbar-light colorhead navbar-desktop">
+      <div class="container">
+        <a href="#" class="navbar__logo">
+          <img src="./assets/static/icons/Mapfre-icon.png" alt="logo-mapfre" />
+        </a>
+        <div class="welcome--description d-flex align-items-center justify-content-between">
+          <p class="mt-3 welcome-page welcome-page-desktop">
+            Cotiza sin costo y compra tu seguro ARRENDAMIENTO al instante
+          </p>
+          <svg class="question-icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28 14C28 17.713 26.525 21.274 23.8995 23.8995C21.274 26.525 17.713 28 14 28C10.287 28 6.72601 26.525 4.10051 23.8995C1.475 21.274 0 17.713 0 14C0 10.287 1.475 6.72601 4.10051 4.10051C6.72601 1.475 10.287 0 14 0C17.713 0 21.274 1.475 23.8995 4.10051C26.525 6.72601 28 10.287 28 14ZM9.618 10.5577H11.0618C11.3033 10.5577 11.4957 10.36 11.5273 10.1202C11.6847 8.97225 12.4722 8.13575 13.8757 8.13575C15.0763 8.13575 16.1753 8.736 16.1753 10.1797C16.1753 11.291 15.5208 11.802 14.4865 12.579C13.3088 13.4348 12.376 14.434 12.4425 16.0562L12.4478 16.436C12.4496 16.5508 12.4965 16.6603 12.5783 16.7408C12.6602 16.8214 12.7704 16.8665 12.8853 16.8665H14.3045C14.4205 16.8665 14.5318 16.8204 14.6139 16.7384C14.6959 16.6563 14.742 16.545 14.742 16.429V16.2453C14.742 14.9888 15.2198 14.623 16.5095 13.6447C17.5753 12.8345 18.6865 11.935 18.6865 10.0468C18.6865 7.4025 16.4535 6.125 14.0087 6.125C11.7915 6.125 9.3625 7.1575 9.19625 10.1255C9.19385 10.182 9.20304 10.2384 9.22326 10.2913C9.24347 10.3441 9.27427 10.3922 9.31377 10.4327C9.35328 10.4732 9.40064 10.5052 9.45296 10.5267C9.50528 10.5482 9.56144 10.5588 9.618 10.5577ZM13.6868 21.833C14.7543 21.833 15.4875 21.1435 15.4875 20.2108C15.4875 19.2447 14.7525 18.5658 13.6868 18.5658C12.6648 18.5658 11.921 19.2447 11.921 20.2108C11.921 21.1435 12.663 21.833 13.6868 21.833Z"
+              fill="white" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Fin Navbar -->
+
+  <!-- Inicio navbar mobile -->
+  <div id="nav-mobile" class="container-fluit">
+    <nav class="navbar navbar-light navbar-mobile">
+      <div class="container">
+        <p class="text-center">
+          Cotiza sin costo y compra tu seguro <b>ARRENDAMIENTO</b> al instante
+        </p>
+      </div>
+    </nav>
+    <nav class="navbar navbar-light d-flex justify-content-between navbar-mobile-2">
+      <div class="container">
+        <img src="./assets/static/icons/icon-mapfre-mobile.svg" />
+        <img src="./assets/static/icons/icon-question-mobile.svg" />
+      </div>
+    </nav>
+  </div>
+  <!-- Fin navbar mobile -->
+
+  <!-- Inicio contenido principal -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="d-flex align-items-center justify-content-between mt-5">
+          <a href="#" onclick="window.history.back();">
+            <img src="./assets/static/icons/btn-back.svg" />
+          </a>
+          <h2 class="text-secondary"><b>VIDA</b></h2>
+          <div></div>
+        </div>
+
+        <!-- Inicio barra de progreso -->
+        <div class="row d-flex justify-content-start mt-5 mb-4 progressbar">
+          <div class="col-md-12 mt-3">
+            <div class="multisteps-form__progress">
+              <a class="multisteps-form__progress-btn " href="#" title="Producto" disabled>Producto</a>
+              <a class="multisteps-form__progress-btn" href="#" title="Datos generale" disabled>Datos generales</a>
+              <a class="multisteps-form__progress-btn" href="#" title="Cotización" disabled>Cotización</a>
+              <a class="multisteps-form__progress-btn js-active" href="#" title="Datos adicionales" disabled>Datos
+                adicionales</a>
+              <a class="multisteps-form__progress-btn" href="#" title="Documentación" disabled>Documentación</a>
+            </div>
+          </div>
+        </div>
+        <!-- Fin barra de progreso -->
+
+        <!-- inicio producto a cotizar -->
+        <div class="text-center mt-5">
+          <h4 class="text-title">
+            Datos del tomador
+          </h4>
+        </div>
+
+        <div class="row mt-5 mb-5">
+          <div class="col-md-12">
+            <nav class="nav row nav-pills ">
+              <a data-toggle="tab" href="#InformationIdentification" class="col-md-3  text-center tab nav-link active"
+                href="#">Identificación y contacto</a>
+              <a data-toggle="tab" href="#financialInformation" class="col-md-3  text-center tab nav-link"
+                href="#"><span class="tabs__title--mobile">Financiera y tributaria</a>
+              <a data-toggle="tab" href="#OpInternacionales" class="col-md-4  text-center tab nav-link" href="#"><span
+                  class="tabs__title--mobile">Op. Internacionales y reclamaciones</a>
+              <a data-toggle="tab" href="#info_complementaria" class="col-md-2  text-center tab nav-link" href="#"><span
+                  class="tabs__title--mobile">Complementaria</a>
+            </nav>
+          </div>
+          <div class="tab-content mt-3">
+            <div id="InformationIdentification" class="tab-pane active active-tab">
+              <div class="row">
+                <div class="col md-12">
+                  <div class="card p-5 card-shadow">
+                    <div class="text-center">
+                      <h4>Información Identificación</h4>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center mt-4 pb-3 border-bottom border-danger">
+                      <img src="./assets/static/icons/icon-folder-var.svg" alt="folder">
+                      <div class="d-flex flex-column ms-2">
+                        <span>Tipo documento: <span class="text-title"> Cedula de ciudadanía</span></span>
+                        <span>Número documento: <span class="text-title">1022376821</span></span>
+                        <span>Nombre: <span class="text-title">Carlos Eduardo Castro</span></span>
+                      </div>
+                    </div>
+
+                    <form class="row mt-4">
+
+                      <!-- Fecha de expedición * -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="date" class="form-control" placeholder="Fecha de expedición *">
+                            <label class="form-label" for="floatingInput">Fecha de expedición *</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Departamento expedición * -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Cundinamarca</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Departamento expedición *</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Ciudad expedición * -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Bogotá</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Ciudad expedición *</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Nombres -->
+                      <div class="col-md-4">
+                        <div class="form-disabled mb-3">
+                          <label for="">Nombres</label>
+                          <input type="text" class="form-control" value="Carlos Eduardo" disabled>
+                        </div>
+                      </div>
+
+                      <!-- Primer apellido -->
+                      <div class="col-md-4">
+                        <div class="form-disabled mb-3">
+                          <label for="">Primer apellido</label>
+                          <input type="text" class="form-control" value="Castro" disabled>
+                        </div>
+                      </div>
+
+                      <!-- Primer apellido -->
+                      <div class="col-md-4">
+                        <div class="form-disabled mb-3">
+                          <label for="">Segundo apellido</label>
+                          <input type="text" class="form-control" value="Zapata" disabled>
+                        </div>
+                      </div>
+
+                      <!-- Fecha de nacimiento* -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="date" class="form-control" placeholder="Fecha de nacimiento *">
+                            <label class="form-label" for="floatingInput">Fecha de nacimiento *</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Género -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Fenenino</option>
+                              <option value="2">Masculino</option>
+                              <option value="2">Otro</option>
+                            </select>
+                            <label class="pt-2">Género</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Estado Civil -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Soltero</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Estado Civil</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Nacionalidad* -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Colombia</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Nacionalidad*</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 d-flex justify-content-center">
+                        <!-- Otra nacionalidad -->
+                        <div class="d-flex align-items-center">
+                          <span>Otra nacionalidad</span>
+                          <div class="d-flex ms-2">
+                            <button class="btn button-primary me-1">Si</button>
+                            <button class="btn button-secondary">No</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Elije la nacionalidad -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Colombia</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Elije la nacionalidad</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-3">
+                        <!-- Departamento de nacimiento* -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Cundinamarca</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Departamento de nacimiento*</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-3">
+                        <!-- Ciudad de nacimiento -->
+                        <div class="form-group">
+                          <div class="form-floating">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Bogotá</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Ciudad de nacimiento</label>
+                          </div>
+                          <span class="text-title border-bottom border-danger pb-1 float-end">Otro país de
+                            nacimiento</span>
+                        </div>
+                      </div>
+
+                      <!-- Fecha de expedición * -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Profesión/Ocupación*">
+                            <label class="form-label" for="floatingInput">Profesión/Ocupación*</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 ">
+                        <!-- Tipo de actividad -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aquí</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Tipo de actividad</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+
+                  <div class="card p-5 card-shadow mt-4">
+                    <div class="text-center pb-3 border-bottom border-danger">
+                      <h4>Autorización de datos</h4>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mt-3">
+                        <span class="text-justify">
+                          Autorizo expresa e ineuivocamente a usar datos con fines comerciales en los términos de que
+                          trata la claùsula 5 de
+                          Autorización de documento Formulario de concentimiento de cliente
+                        </span>
+                        <div class="d-flex justify-content-between mt-3">
+                          <button id="btn_transacciones_1"
+                            class="btn medium-button-var button-secondary me-1">Si</button>
+                          <button id="btn_transacciones_2" class="btn medium-button-var button-primary">No</button>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <span class="text-justify">
+                          Autorizo expresa e ineuivocamente a Fecolda, Inverfas S.A e INIF, para que traten mis datos
+                          personales en los términos
+                          descritos en la clausula 6 de Autorización de documento Formulario de concentimiento de
+                          cliente, especialmenete para
+                          efectos de prevención y control de fraudes, la seccion de riesgos y control de requisitos para
+                          acceder al Sistema
+                          General de Seguridad Social Integral, así como la elaboración de estudios estadísticos
+                          actuales.
+                        </span>
+                        <div class="d-flex justify-content-between mt-3">
+                          <button id="btn_transacciones_1"
+                            class="btn medium-button-var button-secondary me-1">Si</button>
+                          <button id="btn_transacciones_2" class="btn medium-button-var button-primary">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card p-5 card-shadow mt-4">
+                    <div class="text-center pb-3">
+                      <h4>Contacto</h4>
+                    </div>
+                    <form class="row mt-2">
+
+                      <!-- Departamento Residencia -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="Cundinamarca"
+                              placeholder="Departamento Residencia">
+                            <label class="form-label" for="floatingInput">Departamento Residencia</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Ciudad Residencia -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="Bogotá" placeholder="Ciudad Residencia">
+                            <label class="form-label" for="floatingInput">Ciudad Residencia</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Dirección -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="Cra 19a # 70-40" placeholder="Dirección">
+                            <label class="form-label" for="floatingInput">Dirección</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Teléfono -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="123556789" placeholder="Teléfono">
+                            <label class="form-label" for="floatingInput">Teléfono</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Celular -->
+                      <div class="col-md-4">
+                        <div class="form-disabled mb-3">
+                          <label for="">Celular</label>
+                          <input type="text" class="form-control" value="123456789" disabled>
+                        </div>
+                      </div>
+
+
+                      <!-- Email -->
+                      <div class="col-md-4">
+                        <div class="form-disabled mb-3">
+                          <label for="">Email</label>
+                          <input type="text" class="form-control" value="Ernestoperez@gmail.com" disabled>
+                        </div>
+                      </div>
+
+                      <div class="mt-4">
+                        <div class="d-flex align-items-center">
+                          <h5 style="width: 15%;" class="text-title"><b>Datos Oficina</b></h5>
+                          <div class="line"></div>
+                        </div>
+                      </div>
+
+                      <!-- Cargo -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="Jefe" placeholder="Cargo">
+                            <label class="form-label" for="floatingInput">Cargo</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Ciudad -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="Bogotá" placeholder="Ciudad">
+                            <label class="form-label" for="floatingInput">Ciudad</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Dirección -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="cra10a # 88-90" placeholder="Dirección">
+                            <label class="form-label" for="floatingInput">Dirección</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Teléfono -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="123556789" placeholder="Teléfono">
+                            <label class="form-label" for="floatingInput">Teléfono</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Teléfono -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="Erenestoperez2@gmail.com"
+                              placeholder="Email">
+                            <label class="form-label" for="floatingInput">Email</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div id="financialInformation" class="tab-pane">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card card-shadow p-5">
+                    <div class="text-center">
+                      <h4>Información Financiera</h4>
+                    </div>
+                    <form class="row">
+
+                      <!-- No. Cuenta bancaria -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" placeholder="No. Cuenta bancaria">
+                            <label class="form-label" for="floatingInput">No. Cuenta bancaria</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Ingresos mensuales -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" placeholder="Ingresos mensuales">
+                            <label class="form-label" for="floatingInput">Ingresos mensuales</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Egresos mensuales -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" placeholder="Egresos mensuales">
+                            <label class="form-label" for="floatingInput">Egresos mensuales</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Otros ingresos -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" placeholder="Otros ingresos">
+                            <label class="form-label" for="floatingInput">Otros ingresos</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Actividad secundaria -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Actividad secundaria</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Activos -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" placeholder="Activos">
+                            <label class="form-label" for="floatingInput">Activos</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Pasivos -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" placeholder="Pasivos">
+                            <label class="form-label" for="floatingInput">Pasivos</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Patrimonio -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" placeholder="Ejemplo aqui">
+                            <label class="form-label" for="floatingInput">Ejemplo aqui</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Origen de fondos -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" placeholder="Origen de fondos">
+                            <label class="form-label" for="floatingInput">Origen de fondos</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+
+                  <div class="card card-shadow p-5 mt-4">
+                    <div class="text-center">
+                      <h4>Información Política</h4>
+                    </div>
+
+                    <div class="row mt-2 security_questions border-bottom border-danger pb-5">
+                      <div class="col-md-6">
+                        <div class="d-flex flex-column">
+                          <span>1. ¿Eres una persona expuesta políticamente? o ¿Administras recursos publicos?</span>
+                          <div class="d-flex justify-content-between mt-2">
+                            <button id="btn_transacciones_1"
+                              class="btn medium-button-var button-secondary me-1">Si</button>
+                            <button id="btn_transacciones_2" class="btn medium-button-var button-primary">No</button>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column mt-4">
+                          <span>3. ¿Eres una persona con reconocida influencia pública o política? ¿Tienes algún
+                            familiar que lo sea?</span>
+                          <div class="d-flex justify-content-between mt-2">
+                            <button id="btn_influencia_1"
+                              class="btn medium-button-var button-secondary me-1">Si</button>
+                            <button id="btn_influencia_2" class="btn medium-button-var button-primary">No</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 question-section-mobile">
+                        <div class="d-flex flex-column">
+                          <span class="mb-4">2. ¿Eres representante legal de una organización en el exterior?</span>
+                          <div class="d-flex justify-content-between mt-2">
+                            <button id="btn_representante_1"
+                              class="btn medium-button-var button-secondary me-1">Si</button>
+                            <button id="btn_representante_2" class="btn medium-button-var button-primary">No</button>
+                          </div>
+                        </div>
+
+                        <div class="d-flex flex-column mt-4">
+                          <span>4. ¿Manejas recursos públicos? ¿Ejerces algún grado de orden público? ¿Tienes algún
+                            familiar que lo haga?</span>
+                          <div class="d-flex justify-content-between mt-2">
+                            <button id="btn_recursos_1" class="btn medium-button-var button-secondary me-1">Si</button>
+                            <button id="btn_recursos_2" class="btn medium-button-var button-primary">No</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <form class=" row mt-4">
+                      <!-- Vínculo -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Vínculo">
+                            <label class="form-label" for="floatingInput">Vínculo</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Nombre completo -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre completo">
+                            <label class="form-label" for="floatingInput">Nombre completo</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Tipo de documento -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Cédula de ciudadanía</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Tipo de documento</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Número de identificación  -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Número de identificación ">
+                            <label class="form-label" for="floatingInput">Número de identificación </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Nacionalidad -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Colombia</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Nacionalidad</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Entidad de trabajo -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Entidad de trabajo">
+                            <label class="form-label" for="floatingInput">Entidad de trabajo</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Cargo -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Cargo</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 d-flex justify-content-center">
+                        <!-- Vinculado actualmente -->
+                        <div class="d-flex align-items-center">
+                          <span>Vinculado actualmente</span>
+                          <div class="d-flex ms-2">
+                            <button class="btn button-primary me-1">Si</button>
+                            <button class="btn button-secondary">No</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Fecha a desvinculación -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="date" class="form-control" placeholder="Fecha a desvinculación">
+                            <label class="form-label" for="floatingInput">Fecha a desvinculación</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </form>
+                    <div class="d-flex align-items-center mt-3">
+                      <div class="line"></div>
+                      <div id="btn_agregar" class="btn_agregar text-center" role="button">
+                        <img src="./assets/static/icons/btn_agregar-icon.svg" alt="agregar">
+                        <span>Agregar</span>
+                      </div>
+                    </div>
+                    <!-- inicio tabla -->
+                    <div id="tabla_informacion_politica" class="scrollme ">
+                      <table class="table table-bordered mt-4 text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">Vinculo</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Tipo Doc.</th>
+                            <th scope="col">No. Identificación</th>
+                            <th scope="col">Nacionalidad</th>
+                            <th scope="col">Entidad</th>
+                            <th scope="col">Cargo</th>
+                            <th scope="col">Vinculado</th>
+                            <th scope="col">Cargo</th>
+                            <th scope="col">Fecha desvinculación</th>
+                            <th scope="col">Eliminar</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">Ejemplo</td>
+                            <td class="text-center">Carlos Cabrera</td>
+                            <td class="text-center">C.C</td>
+                            <td class="text-center">123456789</td>
+                            <td class="text-center">Colombia</td>
+                            <td class="text-center">MAPFRE</td>
+                            <td class="text-center">Ejemplo aqui</td>
+                            <td class="text-center">Si</td>
+                            <td class="text-center">Ejemplo aqui</td>
+                            <td class="text-center">9/12/2023</td>
+
+                            <td>
+                              <div class="d-flex justify-content-center"><button class="btn button-primary"><img
+                                    src="./assets/static/icons/garbage-icon.svg" alt="pencil-icon"></button></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- fin tabla -->
+                  </div>
+                  <div class="card card-shadow p-5 mt-4">
+                    <div class="text-center">
+                      <h4>Información Tributaria</h4>
+                    </div>
+                    <form class="row">
+                      <!-- Actividad económica* -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" placeholder="Actividad económica*">
+                            <label class="form-label" for="floatingInput">Actividad económica*</label>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Código ICA -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" placeholder="Código ICA">
+                            <label class="form-label" for="floatingInput">Código ICA</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <!-- Régimen -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Régimen</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </form>
+
+                    <div class="row mt-2 security_questions border-bottom border-danger pb-5">
+                      <div class="col-md-6">
+                        <div class="d-flex flex-column">
+                          <span>Gran contribuyente</span>
+                          <div class="d-flex justify-content-between mt-2">
+                            <button id="btn_contribuyente_1"
+                              class="btn medium-button-var button-secondary me-1">Si</button>
+                            <button id="btn_contribuyente_2" class="btn medium-button-var button-primary">No</button>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column mt-4">
+                          <span>3. ¿Eres una persona con reconocida influencia pública o política? ¿Tienes algún
+                            familiar que lo sea?</span>
+                          <div class="d-flex justify-content-between mt-2">
+                            <button id="btn_autoretenedor_1"
+                              class="btn medium-button-var button-secondary me-1">Si</button>
+                            <button id="btn_autoretenedor_2" class="btn medium-button-var button-primary">No</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 question-section-mobile">
+                        <div class="d-flex flex-column">
+                          <span class="">Autoretenedor</span>
+                          <div class="d-flex justify-content-between mt-2">
+                            <button id="btn_representante_1"
+                              class="btn medium-button-var button-secondary me-1">Si</button>
+                            <button id="btn_representante_2" class="btn medium-button-var button-primary">No</button>
+                          </div>
+                        </div>
+
+                        <div class="d-flex flex-column mt-4">
+                          <span>4. ¿Manejas recursos públicos? ¿Ejerces algún grado de orden público? ¿Tienes algún
+                            familiar que lo haga?</span>
+                          <div class="d-flex justify-content-between mt-2">
+                            <button id="btn_recursos_1" class="btn medium-button-var button-secondary me-1">Si</button>
+                            <button id="btn_recursos_2" class="btn medium-button-var button-primary">No</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div id="OpInternacionales" class="tab-pane">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card card-shadow p-5">
+                    <div class="text-center">
+                      <h4>Operaciones internacionales</h4>
+                    </div>
+                    <form class="row mt-4 security_questions ">
+                      <div class="col-md-6 mb-4">
+                        <span>1. Realizas operaciones en moneda extranjera</span>
+                        <div class="d-flex justify-content-between mt-2">
+                          <button id="btn_transacciones_1"
+                            class="btn medium-button-var button-secondary me-1">Si</button>
+                          <button id="btn_transacciones_2" class="btn medium-button-var button-primary">No</button>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <span>2. Productos financieros en el exterior</span>
+                        <div class="d-flex justify-content-between mt-2">
+                          <button id="btn_influencia_1" class="btn medium-button-var button-secondary me-1">Si</button>
+                          <button id="btn_influencia_2" class="btn medium-button-var button-primary">No</button>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <!-- Tipo documento -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Tipo documento</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Fecha de expedición * -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Fecha de expedición *">
+                            <label class="form-label" for="floatingInput">Fecha de expedición *</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Entidad -->
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Entidad">
+                            <label class="form-label" for="floatingInput">Entidad</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Monto mensual -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Monto mensual">
+                            <label class="form-label" for="floatingInput">Monto mensual</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <!-- Ciudad -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Ciudad</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <!-- Pais -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Pais</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <!-- Moneda -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Moneda</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center mt-3">
+                        <div class="line"></div>
+                        <div id="btn_agregar_operaciones" class="btn_agregar text-center" role="button">
+                          <img src="./assets/static/icons/btn_agregar-icon.svg" alt="agregar">
+                          <span>Agregar</span>
+                        </div>
+                      </div>
+
+                    </form>
+
+                    <!-- inicio tabla -->
+                    <div id="tabla_operaciones_adicionales" class="scrollme ">
+                      <table class="table table-bordered mt-4">
+                        <thead>
+                          <tr>
+                            <th class="text-center" scope="col">Tipo Doc.</th>
+                            <th class="text-center" scope="col">No. Identificación</th>
+                            <th class="text-center" scope="col">Entidad</th>
+                            <th class="text-center" scope="col">Monto mensual</th>
+                            <th class="text-center" scope="col">Ciudad</th>
+                            <th class="text-center" scope="col">Pais</th>
+                            <th class="text-center" scope="col">Moneda</th>
+                            <th class="text-center" scope="col">Eliminar</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">C.C</td>
+                            <td class="text-center">12344567</td>
+                            <td class="text-center">MAPFRE</td>
+                            <td class="text-center">$100.000</td>
+                            <td class="text-center">Bogotá</td>
+                            <td class="text-center">Colombia</td>
+                            <td class="text-center">Dolar</td>
+                            <td>
+                              <div class="d-flex justify-content-center"><button class="btn button-primary"><img
+                                    src="./assets/static/icons/garbage-icon.svg" alt="pencil-icon"></button></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- fin tabla -->
+                  </div>
+                  <div class="card card-shadow mt-4 p-5">
+                    <div class="text-center">
+                      <h4>
+                        Reclamaciones de seguros
+                      </h4>
+                    </div>
+                    <form class="row mt-3">
+
+                      <div class="col-md-6">
+                        <span>1. Relacione a continuacion las reclamaciones presentadas e indemnizaciones recibidas
+                        </span>
+                      </div>
+
+                      <div class="col-md-6 mb-3">
+                        <div class="d-flex justify-content-between mt-2">
+                          <button id="btn_transacciones_1"
+                            class="btn medium-button-var button-secondary me-1">Si</button>
+                          <button id="btn_transacciones_2" class="btn medium-button-var button-primary">No</button>
+                        </div>
+                      </div>
+
+                      <!-- Año  -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Año">
+                            <label class="form-label" for="floatingInput">Año</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <!-- Producto -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Producto</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Entidad  -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Año">
+                            <label class="form-label" for="floatingInput">Entidad</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Valor  -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Año">
+                            <label class="form-label" for="floatingInput">Valor</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center mt-3">
+                        <div class="line"></div>
+                        <div id="btn_agregar_reclamaciones" class="btn_agregar text-center" role="button">
+                          <img src="./assets/static/icons/btn_agregar-icon.svg" alt="agregar">
+                          <span>Agregar</span>
+                        </div>
+                      </div>
+
+                    </form>
+                    <!-- inicio tabla -->
+                    <div id="tabla_reclamaciones" class="scrollme ">
+                      <table class="table table-bordered mt-4">
+                        <thead>
+                          <tr>
+                            <th class="text-center" scope="col">Tipo Doc.</th>
+                            <th class="text-center" scope="col">No. Identificación</th>
+                            <th class="text-center" scope="col">Entidad</th>
+                            <th class="text-center" scope="col">Entidad</th>
+                            <th class="text-center" scope="col">Eliminar</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">$100.000</td>
+                            <td class="text-center">Bogotá</td>
+                            <td class="text-center">Colombia</td>
+                            <td class="text-center">Dolar</td>
+                            <td>
+                              <div class="d-flex justify-content-center"><button class="btn button-primary"><img
+                                    src="./assets/static/icons/garbage-icon.svg" alt="pencil-icon"></button></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- fin tabla -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="info_complementaria" class="tab-pane">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card card-shadow p-5">
+                    <div class="text-center">
+                      <h4>Información complementaria</h4>
+                    </div>
+                    <form class="row mt-3">
+
+                      <div class="col-md-6">
+                        <!-- Vínculo existente entre Asegurado -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Vínculo existente entre Asegurado - Beneficiario*</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <!-- Vínculo existente entre Tomador - Beneficiario* -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Vínculo existente entre Tomador - Beneficiario*</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <!-- Vínculo existente entre Tomador - Asegurado* -->
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <select id="type_document" class="form-select">
+                              <option value="1">Ejemplo aqui</option>
+                              <option value="2">Lorem</option>
+                            </select>
+                            <label class="pt-2">Vínculo existente entre Tomador - Asegurado*</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mb-4">
+                        <span>¿Tiene hijos?</span>
+                        <div class="d-flex justify-content-between mt-2">
+                          <button id="" class="btn medium-button-var button-secondary me-1" type="button">Si</button>
+                          <button id="" class="btn medium-button-var button-primary" type="button">No</button>
+                        </div>
+                      </div>
+
+                      <div class="mt-4 mb-3">
+                        <div class="d-flex align-items-center">
+                          <h5 style="width: 20%;" class="text-title"><b>Datos Entrevista</b></h5>
+                          <div class="line"></div>
+                        </div>
+                      </div>
+
+                      <!-- Lugar de la entrevista -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Lugar de la entrevista">
+                            <label class="form-label" for="floatingInput">Lugar de la entrevista</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mb-4">
+                        <span>Resultado de la entrevista</span>
+                        <div class="d-flex justify-content-between mt-2">
+                          <button id="" class="btn medium-button-var button-secondary me-1" type="button">Si</button>
+                          <button id="" class="btn medium-button-var button-primary" type="button">No</button>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <span>Por favor, explica con detalle los ingresos de otras actvidades:</span>
+                          <textarea class="form-control mt-2" rows="4"></textarea>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-12">
+                  <div class="card card-shadow p-5">
+                    <div class="text-center">
+                      <h4>Información de interés</h4>
+                    </div>
+                    <form class="row mt-4">
+
+                      <div class="col-md-4 mb-4">
+                        <span>Posee un Auto</span>
+                        <div class="d-flex justify-content-between mt-2">
+                          <button id="" class="btn medium-button-var button-primary me-1" type="button">Si</button>
+                          <button id="" class="btn medium-button-var button-secondary" type="button">No</button>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mb-4">
+                        <span>Posee un Auto adicional</span>
+                        <div class="d-flex justify-content-between mt-2">
+                          <button id="" class="btn medium-button-var button-primary me-1" type="button">Si</button>
+                          <button id="" class="btn medium-button-var button-secondary" type="button">No</button>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mb-4">
+                        <span>Tiene vivienda fuera de su lugar de residencia </span>
+                        <div class="d-flex justify-content-between mt-2">
+                          <button id="" class="btn medium-button-var button-primary me-1" type="button">Si</button>
+                          <button id="" class="btn medium-button-var button-secondary" type="button">No</button>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="alert alert-danger" role="alert">
+                          <b class="text-title">Nota:</b> Recuerda que por cada módulo, solo puedes elegir como máximo 2
+                          opciones
+                        </div>
+                      </div>
+
+                      <div class="mt-4">
+                        <div class="d-flex align-items-center">
+                          <div style="width: 17%;" class="d-flex">
+                            <img src="./assets/static/icons/hobbies-icon.svg" alt="mando">
+                            <h5 class="text-title ms-2"><b>Hobbies</b></h5>
+                          </div>
+                          <div class="line"></div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-1" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-1" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Arte/Exhibición/Museos</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-2" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-2" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Compras/Mmoda/Belleza</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-3" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-3" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Libros/Prensa/Revistas</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-4" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-4" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Turismo/Viajes</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-4" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-4" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Deportes</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-5" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-5" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Arte/Exhibición/Museos</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-6" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-6" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Videojuegos/Consolas</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-7" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-7" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Automovilismo</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-8" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-8" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Bares/Pubs</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-9" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-9" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Internet/Tecnología</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-10" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-10" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Motociclismo</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-11" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-11" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Música</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-12" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-12" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Cocineros/Teatro/Cine/Entrteniminto</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-13" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-13" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Restaurantes</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-14" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-14" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Fotografía/Video</span>
+                          </label>
+                        </div>
+
+                      </div>
+
+                      <div class="mt-5">
+                        <div class="d-flex align-items-center">
+                          <div style="width: 25%;" class="d-flex">
+                            <img src="./assets/static/icons/earphones-icon.svg" alt="mando">
+                            <h5 class="text-title ms-2"><b>Áreas de Interés</b></h5>
+                          </div>
+                          <div class="line"></div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-15" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-15" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Agronomía</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-16" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-16" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Psicología</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-4 mt-3">
+                          <input id="check-17" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-17" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span
+                              class="title-card-option-1 text-center">Computación/Internet/Tecnología/Comunicaciones</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-2 mt-3">
+                          <input id="check-18" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-18" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Recursos Humanos</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-19" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-19" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Deportes</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-20" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-20" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Economía/Banca/Finanzas</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-21" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-21" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Salud</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-21" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-21" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Turismo/Viajes</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-22" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-22" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Educación</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-23" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-23" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Ventas</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-24" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-24" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Entretenimiento</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-25" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-25" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Medio ambiente</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-26" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-26" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Ingeniería</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-27" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-27" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Arquitectura</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-28" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-28" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Arquitectura</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-29" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-29" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Mercadeo y publicidad</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-30" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-30" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Artes/Música</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-31" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-31" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Moda y belleza</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-32" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-32" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Audio y video</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-33" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-33" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Negocios</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-34" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-34" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Comida y bebidas</span>
+                          </label>
+                        </div>
+
+                      </div>
+
+                      <div class="mt-5">
+                        <div class="d-flex align-items-center">
+                          <div style="width: 25%;" class="d-flex align-items-center">
+                            <img src="./assets/static/icons/internet-icon.svg" alt="mando">
+                            <h5 class="text-title ms-2"><b>Áreas de Interés</b></h5>
+                          </div>
+                          <div class="line"></div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-35" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-35" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Banca</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-36" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-36" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Blog</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-37" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-37" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Búsqueda</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-38" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-38" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Compras</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-39" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-39" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Llamadas</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-40" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-40" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Redes Sociales</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-41" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-41" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Sitios Privados</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-42" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-42" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Descargas</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-43" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-43" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Juegos</span>
+                          </label>
+                        </div>
+
+                      </div>
+
+                      <div class="mt-5">
+                        <div class="d-flex align-items-center">
+                          <div style="width: 25%;" class="d-flex align-items-center">
+                            <img src="./assets/static/icons/music_icon.svg" alt="mando">
+                            <h5 class="text-title ms-2"><b>Música Favorita</b></h5>
+                          </div>
+                          <div class="line"></div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-45" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-45" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Blues</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-46" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-46" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Pop</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-47" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-47" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Rap/Hip-Hop</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-48" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-48" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Ranchera</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-49" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-49" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Reggae</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-50" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-50" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Reggaeton</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-51" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-51" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Rock</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-52" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-52" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Rock en español</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-53" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-53" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Salsa</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-54" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-54" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Tango</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-55" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-55" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Vallenato</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-56" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-56" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Clásica</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-57" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-57" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Electónica</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-58" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-58" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Punk</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-59" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-59" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Jazz</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-60" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-60" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Heavy Metal</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-61" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-61" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Norteña</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-62" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-62" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Nueva era</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-63" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-63" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Merengue</span>
+                          </label>
+                        </div>
+
+                      </div>
+
+                      <div class="mt-5">
+                        <div class="d-flex align-items-center">
+                          <div style="width: 25%;" class="d-flex align-items-center">
+                            <img src="./assets/static/icons/food_icon.svg" alt="food">
+                            <h5 class="text-title ms-2"><b>Comida Favorita</b></h5>
+                          </div>
+                          <div class="line"></div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-64" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-64" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Alemana</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-65" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-65" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Hindú</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-66" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-66" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Huilense</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-67" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-67" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Italiana</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-68" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-68" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Japonesa</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-69" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-69" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Llanera</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-70" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-70" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Mexicana</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-71" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-71" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Paisa</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-72" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-72" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Pastusa</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-73" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-73" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Rápida</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-74" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-74" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Santandereana</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-75" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-75" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Árabe</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-76" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-76" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Thai</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-77" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-77" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Turca</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-78" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-78" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Valluna</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-79" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-79" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Vegetariana</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-80" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-80" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Colombiana</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-81" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-81" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Costeña</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-82" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-82" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Cundiboyacense</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-83" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-83" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">China</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-84" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-84" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">De mar</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-85" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-85" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Española</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-86" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-86" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Griega</span>
+                          </label>
+                        </div>
+
+                      </div>
+
+                      <div class="mt-5">
+                        <div class="d-flex align-items-center">
+                          <div style="width: 30%;" class="d-flex align-items-center">
+                            <img src="./assets/static/icons/sport_icon.svg" alt="food">
+                            <h5 class="text-title ms-2"><b>Deportes favoritos</b></h5>
+                          </div>
+                          <div class="line"></div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-87" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-87" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Atletismo</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-88" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-88" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Squash</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-89" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-89" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Tennis</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-90" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-90" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Tejo</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-91" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-91" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Voleibol</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-92" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-92" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Artes Marciales</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-93" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-93" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Basketball</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-94" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-94" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Boxeo</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-95" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-95" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Ciclismo</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-96" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-96" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Futbol</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-97" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-97" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Equitación</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-98" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-98" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Golf</span>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                          <input id="check-99" class="card-option-select" type="checkbox" name="option" />
+                          <label for="check-99" class="card card-option-item1 card-shadow py-3 px-2" data-toggle="modal"
+                            data-target="#modal-enfermedad1">
+                            <span class="title-card-option-1 text-center">Natación</span>
+                          </label>
+                        </div>
+
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin producto a cotizar -->
+
+      <!-- Boton Continuar -->
+      <div class="d-flex justify-content-center mb-5">
+        <a href="documentos_soporte.html" class="btn button-success medium-button continue">
+          Continuar
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Fin contenido principal -->
+
+  <!-- Inicio Footer -->
+  <div class="container-fluit footer__container px-2">
+    <div class="row align-items-center footer p-4">
+      <div class="col-md-4 col-sm-12 col-12 mt-1 d-flex center">
+        <img class="footer__item--img" src="./assets/static/icons/footer-icon.svg" alt="" />
+        <h6 class="mt-1 mx-2">
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Todos los derechos reservados
+        </h6>
+      </div>
+      <div class="col-md-4 col-sm-12 col-12 text-center">
+        <img src="./assets/static/icons/icon-vigilado.svg" alt="" />
+      </div>
+      <div class="col-md-4 col-sm-12 col-12 text-center">
+        <h6 class="mt-2 mx-2">Nacional 018000 973 031/ Bogotá 307 80 32</h6>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Footer -->
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+
+  <script src="./assets/styles/js/datos_tomador2.js"></script>
+</body>
+
+</html>

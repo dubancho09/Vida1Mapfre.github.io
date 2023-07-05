@@ -65,10 +65,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="d-flex align-items-center justify-content-between mt-5">
-          <a href="#" onclick="window.history.back();">
-            <img src="./assets/static/icons/btn-back.svg" />
-          </a>
+        <div class="d-flex align-items-center justify-content-center mt-5">
+          <!-- <a href="#" onclick="window.history.back();">
+              <img src="./assets/static/icons/btn-back.svg" />
+            </a> -->
           <h2 class="text-secondary"><b>VIDA</b></h2>
           <div></div>
         </div>
@@ -77,105 +77,126 @@
         <div class="row d-flex justify-content-start mt-5 mb-4 progressbar">
           <div class="col-md-12 mt-3">
             <div class="multisteps-form__progress">
-              <a class="multisteps-form__progress-btn" href="#" title="Producto" disabled>Producto</a>
-              <a class="multisteps-form__progress-btn js-active" href="#" title="Datos generale" disabled>Datos
-                generales</a>
+              <a class="multisteps-form__progress-btn " href="#" title="Producto" disabled>Producto</a>
+              <a class="multisteps-form__progress-btn" href="#" title="Datos generale" disabled>Datos generales</a>
               <a class="multisteps-form__progress-btn" href="#" title="Cotización" disabled>Cotización</a>
               <a class="multisteps-form__progress-btn" href="#" title="Datos adicionales" disabled>Datos adicionales</a>
-              <a class="multisteps-form__progress-btn" href="#" title="Documentación" disabled>Documentación</a>
+              <a class="multisteps-form__progress-btn js-active" href="#" title="Documentación"
+                disabled>Documentación</a>
             </div>
           </div>
         </div>
         <!-- Fin barra de progreso -->
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card card-form p-5">
-              <div class="text-center">
-                <h4 class="text-title"><b>Datos sobre las coberturas</b></h4>
-                <span class="card-property-description">Estos nos ayudarán a generar una póliza a tu medida</span>
+        <!-- inicio contenido principal -->
+        <div class="text-center mt-5">
+          <h4 class="text-title">
+            <strong>Resumen de la cotización</strong>
+          </h4>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="card py-3 px-2">
+              <div class="d-flex justify-content-end">
+                <a href="#">
+                  <img src="./assets/static/icons/icon-download.svg" alt="download">
+                </a>
               </div>
-
-              <!-- Inicio datos sobre las coberturas -->
-
-              <form id="form-data" class="row mt-5">
-
-                <!-- Suma asegurada fallecimiento -->
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <div class="form-floating mb-3">
-                      <input type="number" class="form-control" placeholder="Suma asegurada fallecimiento">
-                      <label class="form-label" for="floatingInput">Suma asegurada fallecimiento</label>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Suma asegurada renta -->
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <div class="form-floating mb-3">
-                      <input type="number" class="form-control" placeholder="Suma asegurada renta">
-                      <label class="form-label" for="floatingInput">Suma asegurada renta</label>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Suma asegurada renta -->
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <div class="form-floating mb-3">
-                      <input type="number" class="form-control" placeholder="Duración pago de primas">
-                      <label class="form-label" for="floatingInput">Duración pago de primas</label>
-                    </div>
-                  </div>
-                </div>
-
-              </form>
-
-              <div class="row mt-2 security_questions  pb-5">
-                <div class="col-md-6">
-                  <div class="d-flex flex-column">
-                    <span>¿Contrata fallecimiento accidental?</span>
-                    <div class="d-flex justify-content-between mt-2">
-                      <button id="btn_transacciones_1" class="btn medium-button-var button-secondary me-1">Si</button>
-                      <button id="btn_transacciones_2" class="btn medium-button-var button-primary">No</button>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-column mt-4">
-                    <span>¿Contrata enfermedades graves?</span>
-                    <div class="d-flex justify-content-between mt-2">
-                      <button id="btn_influencia_1" class="btn medium-button-var button-secondary me-1">Si</button>
-                      <button id="btn_influencia_2" class="btn medium-button-var button-primary">No</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 question-section-mobile">
-                  <div class="d-flex flex-column">
-                    <span class="mb-2">¿Contrata invalidez total y permanente?</span>
-                    <div class="d-flex justify-content-between">
-                      <button id="btn_representante_1" class="btn medium-button-var button-secondary me-1">Si</button>
-                      <button id="btn_representante_2" class="btn medium-button-var button-primary">No</button>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-column mt-4">
-                    <span>¿Contrata exoneración pago primas?</span>
-                    <div class="d-flex  justify-content-between mt-2">
-                      <button id="btn_recursos_1" class="btn medium-button-var button-secondary me-1">Si</button>
-                      <button id="btn_recursos_2" class="btn medium-button-var button-primary">No</button>
-                    </div>
-                  </div>
+              <div class="d-flex mt-3 justify-content-center   mx-5">
+                <img src="./assets/static/icons/icon-description-poliza.svg" alt="icon">
+                <div class="d-flex ms-3 flex-column">
+                  <strong>Renta Educativa</strong>
+                  <span class="h1 text-title">$ 1.350.000</span>
+                  <span class="text-title price_description">Pesos colombianos</span>
                 </div>
               </div>
-              <!-- Fin datos sobre las coberturas -->
+              <div class="d-flex flex-column justify-content-start mt-4 card-subheader-description mx-5">
+                <span class="text-title">Coberturas al asegurado</span>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+              </div>
+
+              <div class="d-flex flex-column justify-content-start mt-4 card-subheader-description mx-5">
+                <span class="text-title">Coberturas al adicionales</span>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+              </div>
+
+              <div class="d-flex justify-content-center card-mobile-buttons mt-4 mx-5">
+
+                <button class="btn medium-button button-outline-danger">Ver más detalles</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card py-3 px-2">
+              <div class="d-flex p-3">
+                <img src="./assets/static/icons/confirmacion-icon.svg" alt="icono confirmación">
+                <div class="ms-3">
+                  <span class="span1-confimacion">Estado de la póliza</span>
+                  <h1 class="estado-poliza-resumen">Procesando</h1>
+                  <span class="span2-confimacion"><b>Número: 10000000000123</b></span>
+                </div>
+
+              </div>
+              <div class="p-3">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="w-25 datos_asegurado1">
+                    <b>Vigencia</b>
+                  </div>
+                  <div class="w-75 datos_asegurado2 d-flex flex-column justify-content-center">
+                    30/08/2022 - 29/08/2023
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <div class="w-25 datos_asegurado1">
+                    <b>Vigencia</b>
+                  </div>
+                  <div class="w-75 datos_asegurado2 d-flex flex-column justify-content-center">
+                    30/08/2022 - 29/08/2023
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <div class="w-25 datos_asegurado1">
+                    <b>Tomador</b>
+                  </div>
+                  <div class="w-75 datos_asegurado2 d-flex flex-column justify-content-center">
+                    <span class="text-title"><b>1000000123</b></span>
+                    <span style="margin-top: -10px;">Granados Pacheco Liliana Teresa</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <div class="w-25 datos_asegurado1">
+                    <b>Asegurado</b>
+                  </div>
+                  <div class="w-75 datos_asegurado2 d-flex flex-column justify-content-center">
+                    Granados Pacheco Liliana Teresa
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                  <div class="w-25 datos_asegurado1">
+                    <b>Forma de pago</b>
+                  </div>
+                  <div class="w-75 datos_asegurado2 d-flex flex-column justify-content-center">
+                    Domicialiario
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- fin contenido principal -->
+
         <!-- Boton Continuar -->
-        <div class="d-flex btn_mobile justify-content-center mb-5 mt-5">
-          <button class="btn button-success medium-button continue" disabled>
-            Continuar
+        <div class="d-flex justify-content-center mt-5 mb-5">
+          <button class="btn button-success medium-button continue">
+            Finalizar
           </button>
         </div>
       </div>
@@ -218,7 +239,7 @@
     integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
     crossorigin="anonymous"></script>
 
-  <script src="./assets/styles/js/datos_coberturas.js"></script>
+
 </body>
 
 </html>
