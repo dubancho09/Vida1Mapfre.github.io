@@ -9,7 +9,7 @@ const btn_continuar_modal = document.querySelector("#btn_continuar_modal");
 
 let name_file;
 
-btn_continuar_modal.addEventListener("click" , ()=> {
+btn_continuar_modal.addEventListener("click", () => {
     window.location.href = "./documentos_firmar.html";
 });
 
