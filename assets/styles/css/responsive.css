@@ -84,6 +84,28 @@
     }
 
     .description-price{
+        top: -2%;
+        left: 50%;
+        transform: translate(-50%, -2%);
+    }
+
+    .text-line{
+        width: 70%;
+    }
+
+    .text-line-1{
+        width: 90%;
+    }
+
+    .description-price-mobile{
+        display: none;
+    }
+
+    .text-title-mobile{
+        margin-top: 6.25rem !important;
+    }
+
+    .tabs-mobile{
         display: none;
     }
 
